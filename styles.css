@@ -2,7 +2,7 @@
     --colorPrimario: #FFA600; 
     --colorSecundario: white;
     --colorComplementario: #ffb300a2 ;
-    --colorLetras: gold;
+    --colorLetras: rgb(255, 217, 0);
     --colorSection1: #654321;
     --colorSection2: #3a1f04;
     --colorLetras2: black;
@@ -87,15 +87,89 @@ nav a:hover::after{
 
 }
 
+    /*Carrusel del index*/
+
+.container_incarrusel{
+    position: relative;
+    max-width: 1000px;
+
+}    
+
+.content_indexcarrusel{
+    width: 1000px;
+    overflow: hidden;
+    margin: 0;
+    border-radius: 10px;
+
+}
+
+.img_indexcarrusel{
+    display: flex;
+    width: 300px;
+    aspect-ratio: 16 / 9;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 5;
+    
+}
+
+.img_indexcarrusel img{
+    width: 600px;
+    height: 400px;
+    scroll-snap-align: start;
+    object-fit: cover;
+    
+
+}
+
+.index_carrusel_nav{
+    bottom: auto;
+
+}
+
     /*Sección*/
 
 .seccion{
-    height: 100vh;
+    height: 80vh; /*ESTo es la altura de la sección*/
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
     padding-top: 80px;
+
+}
+
+/*SECCIÓN NOSOTROS*/
+
+.sec-nosotros{
+    height: 30vh; 
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 80px;
+
+}
+
+/*SECCIÓN PRODUCTOS*/
+
+.sec-productos{
+    height: 40vh; 
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 80px;
+
+}
+
+/*Sección de la parte de productos*/
+
+.sec-product{
+    color: var(--colorPrimario);
+    font-size: 50px;
+    font-family: "Galindo", sans-serif;
+
 
 }
 
@@ -120,15 +194,17 @@ nav a:hover::after{
     line-height: 1.1;
     margin-bottom: 10px;
     letter-spacing: 0.5px;
-    color: var(--colorLetras);
+    color: var(--colorPrimario);
+    font-family: "Galindo", sans-serif;
 
 }
 
 .texto{
-    font-size: 16px;
+    font-size: 40px;
     margin-bottom: 100px;
     max-width: 700px;
     color: var(--colorSecundario);
+    font-family: "Edu VIC WA NT Hand", cursive;
 
 }
 
@@ -149,36 +225,9 @@ nav a:hover::after{
 }
 
 .section-subtitle{
-    font-size: 20px;
-    color: var(--colorLetras);
-    margin-bottom: 15px;
-
-}
-
-.section-title{
-    font-size: 42px;
-    color: var(--colorSection1);
-    margin-bottom: 20px;
-    position: relative;
-    display: inline-block;
-
-}
-
-.section-title::after{
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-30%);
-    width: 80px;
-    height: 3px;
-    background: var(--colorComplementario);
-
-}
-
-.descripcion{
-    font-size: 18px;
+    font-size: 50px;
     color: var(--colorPrimario);
+    margin-bottom: 15px;
 
 }
 
@@ -241,7 +290,7 @@ nav a:hover::after{
     top:  -20px;
     right: 25px;
     background: var(--colorComplementario);
-    color: var(--colorLetras2);
+    color: var(--colorSecundario);
     padding: 8px 18px;
     border-radius: 20px;
     font-weight: 600;
@@ -257,7 +306,7 @@ nav a:hover::after{
 }
 
 .product-desc{
-    color: var(--colorLetras2);
+    color: var(--colorSecundario);
     margin-bottom: 20px;
     font-size: 16px;
 
@@ -268,9 +317,106 @@ h1, h2, h3, h4{
     font-weight: 700;
     letter-spacing: 0.5px;
 
+}    
+
+    /*Carrusel*/
+
+.carrusel{
+    width: 1000px; /*AQUÍ ES LO QUE DA EL PROBLEMA DEL CARRUSEL*/
+    overflow: hidden;
+    margin: auto;
+    border-radius: 10px;
+
+    }
+
+.img-carrusel{
+    display: flex;
+    width: 300px;
+    animation: moverCarrusel 8s infinite;
+
+    }
+
+.img-carrusel img{
+    width: 600px;
+    height: 400px;
+
 }
 
-    /*Pie de pagina */
+    /*Carrusel Movimiento*/
+
+@keyframes   moverCarrusel {
+    0% {transform: translateX(0);}
+    25% {transform: translateX(0);}
+
+    35% {transform: translateX(-600px);}
+    60% {transform: translateX(-600px);}
+
+    70% {transform: translateX(-1200px);}
+    90% {transform: translateX(-1200px);}
+
+    100% {transform: translateX(0);}
+
+}  
+
+
+    /*INformación de nosotros*/
+
+.nosotros{
+    color: var(--colorComplementario);
+    font-family: "Galindo", sans-serif;
+    font-size: 300%;
+    position: relative;
+    left: auto;
+    text-align: center;
+
+}   
+
+.Infor{
+    color: var(--colorSecundario);
+    font-size: 210%;
+    font-family: "Edu VIC WA NT Hand", cursive;
+    left: auto;
+    text-align: center;
+
+}
+
+/*BOTON FLOTANTE DE WHATSAPP*/
+
+.boton_flotante{
+    background-color: var(--colorSection1);
+    border: 1px solid var(--colorPrimario);
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+
+}
+
+.boton_flotante:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+
+}
+
+.boton-whatsapp{
+    width: 40px;
+    transition: 1s;
+
+
+}
+
+/*MAPA*/
+
+.map{
+    
+
+}
+
+
+/*PIE DE LA PÁGINA*/
 
 footer{
     background: var(--colorPrimario);
@@ -289,6 +435,13 @@ footer{
 
 }
 
+/*H3 que ya no es al vacio*/
+
+.footer-content h3:nth-child(2){
+    grid-column: 3;
+
+}
+
 .footer-column h3{
     font-size: 22px;
     margin-bottom: 25px;
@@ -304,7 +457,7 @@ footer{
     left: 0%;
     width: 50px;
     height: 2px;
-    background: var(--colorSection1);
+    
 
 }
 
@@ -346,7 +499,7 @@ footer{
     height: 35px;
     background: var();
     border-radius: 50%;
-    color: var();
+    color: var(--colorSecundario);
     font-size: 18px;
     transition: all 0.3s ease;
 
@@ -362,7 +515,7 @@ footer{
     text-align: center;
     padding-top: 20px;
     border-top: 1px solid;
-    color: var();
+    color: var(--colorSecundario);
     font-size: 15px;
 
 }

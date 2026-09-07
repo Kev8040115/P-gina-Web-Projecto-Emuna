@@ -4,7 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
+    <!--CSS-->
     <link rel="stylesheet" href="styles.css">
+    <!--LINK BROWSE FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <!--LINK FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--LINK2 BROWSE FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Galindo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <!--Encabezado de la Página-->
@@ -23,21 +36,37 @@
     </header>
 
     <!--sección de contenido-->
-    <section class="seccion">
-    <div class="content">
-    <h1 class="title">Nuestra Selección de productos</h1>   
-    <p class="texto">Nuestros mejores productos, hecho con el corazón. </p>  
+    <section class="sec-productos">
+    <div class="content"> 
+    <h2 class="sec-product">Productos, hecho con el corazón.</h2>  
   </div> 
   </section>
+
+    <!--Carrusel de Productos-->
+
+    <section class="carrusel-products">
+        <div class="container">
+          <div class="carrusel"> 
+            <div class="img-carrusel">
+              <img src="/img/carrusel1.jpg" alt="Imagen 1">
+              <img src="/img/carrusel2.jpg" alt="">
+              <img src="/img/carrusel3.jpg" alt="">
+              <img src="/img/carrusel4.jpg" alt="">
+              <img src="/img/pan_de_queso.jpg" alt="">
+              <img src="/img/carrusel5.jpg" alt="">
+              <img src="/img/carrusel6.jpg" alt="">
+              <img src="/img/carrusel7.jpg" alt="">
+            </div>
+          </div>
+        </div>
+    </section>
 
     <!--Sección de Productos-->
 
 <section class="products" id="productos">
       <div class="container">
         <div class="Section-header"> 
-      <div class="section-subtitle">Nuestra Seleccion</div>
-        <h2 class="section-title">Nuestra mejor seleccion en panes y tortas</h2>
-        <p class="descripcion">Nuestra seccion de productos desde panes hasta tortas</p>
+      <div class="section-subtitle">Nuestra Selección</div>
       </div>
 
       <div class="product-grid">
@@ -86,28 +115,31 @@
 
   </section>
 
-   <!--Pie de la Página-->
-   <footer>
+    <!--Pie de la Página-->
+    <footer>
     <div class="container">
       <div class="footer-content">
         <div class="footer-column">
-          <h3>Acerca de Nosotros</h3>
-          <p>Aqui debo agregar algo de información de la empresa</p>
+          <h3>Enlaces Rapidos</h3>
+          <p class="Direction">Aqui debo agregar algo de información de la empresa</p>
           <div class="redes-links">
-            <a href=""></a>
-            <a href=""></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/TU_NUMERO"><i class="fa-brands fa-whatsapp"></i></a></a>
             <a href=""></a>
           </div>
     </div>
       
+    <!--H3 AL VACIO-->
     <div class="footer-column">
-      <h3>Enlaces Rapidos</h3>
+      <h3></h3>
     </div>
 
     <div class="footer-column">
       <h3>Contactanos</h3>
       <ul class="footer-links">
-        <li></li>
+        <li class="text-direc"><i class="fa-solid fa-location-dot"></i> Carrera 10 entre calle 4 y 5, la Concordia Parte Baja Nmro. 4-89 local 01</li>
+        <li><i class="fa-solid fa-phone"></i> 0424-7054673</li>
+        <li class="text-direc"><i class="fa-regular fa-clock"></i> Lun-Dom: 7am - 5pm</li>
       </ul>
     </div>
 

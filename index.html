@@ -3,8 +3,20 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Emuna Panaderia </title> 
+    <title>La Emuna Panaderia </title>
+    <!--Link del font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--CSS-->
     <link rel="stylesheet" href="styles.css">
+    <!--LINK BROWSER FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <!--LINK2 BROWSER FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Galindo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+
   </head>
 
 <body>
@@ -28,18 +40,38 @@
     <section class="seccion">
     <div class="content">
     <h1 class="title">El Pan Hecho Por El Corazón</h1>   
-    <p class="texto">No solo es pan, es felicidad</p>  
+    <h2 class="texto">No solo es pan, es felicidad</h2>  
   </div> 
   </section>
+
+    <!--Carrusel de la página principal-->
+    <section class="index_carrusel">
+    <div class="container_incarrusel">
+      <div class="content_indexcarrusel">
+        <div class="img_indexcarrusel">
+        <img src="/img/carrusel1.jpg" alt="">
+        <img src="/img/carrusel2.jpg" alt="">
+        <img src="/img/carrusel3.jpg" alt="">
+        <img src="/img/carrusel4.jpg" alt="">
+        <img src="/img/pan_de_queso.jpg" alt="">
+        <img src="/img/carrusel5.jpg" alt="">
+        <img src="/img/carrusel6.jpg" alt="">
+        <img src="/img/carrusel7.jpg" alt="">
+        </div>
+        <div class="index_carrusel_nav">
+          <button></button>
+        </div>
+      </div>
+    </div>
+    </section>
     
   <!--seccion de productos-->
 
   <section class="products" id="productos">
       <div class="container">
         <div class="Section-header"> 
-      <div class="section-subtitle">Nuestra Seleccion</div>
-        <h2 class="section-title">Nuestra mejor seleccion en panes y tortas</h2>
-        <p class="descripcion">Nuestra seccion de productos desde panes hasta tortas</p>
+      <div class="section-subtitle">Nuestra Selección</div>
+        
       </div>
 
       <div class="product-grid">
@@ -50,7 +82,7 @@
     <div class="product-info">
       <div class="product-tag">El Más Vendido</div>
       <h3 class="product-title">Pan De Queso</h3>
-        <p class="product-desc">Nuestro pan más vendido em toda nuestra panaderia</p>
+        <p class="product-desc">Nuestro pan más vendido en toda nuestra panaderia</p>
     </div>
         </div>
         <div class="product-card">
@@ -69,7 +101,7 @@
           </div>
           <div class="product-info">
             <h3 class="product-title">Una de nuestras mejores elecciones de postres</h3>
-            <p class="product-desc">Una deilicioso postre para cumpleaños</p>
+            <p class="product-desc">Un delicioso postre para cumpleaños</p>
           </div>
         </div>
         
@@ -79,44 +111,66 @@
           </div>
           <div class="product-info">
             <h3 class="product-title">Pan de Mantequilla</h3>
-            <p class="product-desc">deilicioso pan de Mantequilla suabe y esponjoso para una tarde agradable</p>
+            <p class="product-desc">Delicioso pan de Mantequilla suabe y esponjoso para una tarde agradable</p>
           </div>
         </div>
         </div>
       </div>
 
   </section>
-      
+
+  <section class="">
+  <div>
+    <div>Productos Destacables</div>
+ 
+  </div>
+
+
+
+  </section>
+
+
+  <!--Botón flotante de whatsapp-->
+  <div class="boton_flotante">
+  <a href="https://wa.me/TU_NUMERO"></a>
+  <img class="boton-whatsapp" src="/img/whatsapp.png4.png" alt="">
+  </div>
+
+  
   <!--pie de la pagina -->
   <footer>
     <div class="container">
       <div class="footer-content">
         <div class="footer-column">
-          <h3>Acerca de Nosotros</h3>
-          <p>Aqui debo agregar algo de información de la empresa</p>
+          <h3>Enlaces Rapidos</h3>
+          <p class="text-direc">Visita nuestra redes sociales</p>
           <div class="redes-links">
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/TU_NUMERO"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
     </div>
       
-    <div class="footer-column">
-      <h3>Enlaces Rapidos</h3>
+    <div class="footer-column"> 
+      <!--MAPA-->
+      <h3>Ubicación</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.3038441584085!2d-72.23245622590376!3d7.7575642922614625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e666caecf5e68b3%3A0x74df5e4e1a3dda1f!2sCarrera%2010%20%26%20Calle%204%20Bis%2C%20San%20Crist%C3%B3bal%205001%2C%20T%C3%A1chira!5e0!3m2!1ses-419!2sve!4v1784396765576!5m2!1ses-419!2sve" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
     </div>
 
     <div class="footer-column">
-      <h3>Contactanos</h3>
+      <h3>Contáctanos</h3>
       <ul class="footer-links">
-        <li></li>
+        <li class="text-direc"><i class="fa-solid fa-location-dot"></i> Carrera 10 entre calle 4 y 5, la Concordia Parte Baja Nmro. 4-89 local 01</li>
+        <li><i class="fa-solid fa-phone"></i> +58-414-7405594</li>
+        <li class="text-direc"><i class="fa-regular fa-clock"></i> Lun-Dom: 7am - 5pm</li>
       </ul>
+      
     </div>
 
     <div class="copyright"></div>
       </div>
     </div>
-  </footer>    
-      
+  </footer>  
+  
     
   <!--documento javascript-->
     <scrip src="script.js"></script> 
